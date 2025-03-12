@@ -38,7 +38,8 @@ import { announcements } from './announcements';
 import { notificationPlugin } from './notificationplugin';
 import { Palette } from './palette';
 import { settingsConnector, settingsPlugin } from './settingsplugin';
-import { kernelStatus, runningSessionsStatus } from './statusbarplugin';
+import { kernelStatus } from './statusbarplugin';
+import { sessionsSettings } from './sessions-settings';
 import { themesPaletteMenuPlugin, themesPlugin } from './themesplugins';
 import { toolbarRegistry } from './toolbarregistryplugin';
 import { workspacesPlugin } from './workspacesplugin';
@@ -737,7 +738,7 @@ const plugins: JupyterFrontEndPlugin<any>[] = [
   paletteRestorer,
   print,
   resolver,
-  runningSessionsStatus,
+  sessionsSettings,
   sanitizer,
   settingsConnector,
   settingsPlugin,
